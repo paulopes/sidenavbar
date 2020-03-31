@@ -1,33 +1,40 @@
 .sidenavbar-button {
     position: absolute;
     z-index: 3;
-    top: 21px;
-    right: 10px;
+    top: 20spx;
+    right: 20px;
     cursor: pointer;
     transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
     display: none;
 }
 .sidenavbar-button div {
-    width: 35px;
-    height: 3px;
-    margin-bottom: 4px;
+    width: 20px;
+    height: 2px;
+    margin-bottom: 3px;
     background-color: var(--dark);
-    transform: scaleX(0.1);
-    border-radius: 4px;
     transition: transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91),
         opacity 500ms, box-shadow 250ms, background-color 500ms;
 }
 .navbar-dark .sidenavbar-button div {
     background-color: var(--light);
 }
+.sidenavbar-button-top {
+    transform: translateX(4px) scaleX(0.4);
+}
+.sidenavbar-button-mid {
+    transform: translateX(0px) scaleX(0.8);
+}
+.sidenavbar-button-bottom {
+    transform: translateX(2px) scaleX(0.6);
+}
 .sidenavbar-active .sidenavbar-button-top {
-    transform: translateY(7px) rotate(-135deg);
+    transform: translateY(5px) rotate(-135deg);
 }
 .sidenavbar-active .sidenavbar-button-mid {
     transform: scale(0);
 }
 .sidenavbar-active .sidenavbar-button-bottom {
-    transform: translateY(-7px) rotate(-45deg);
+    transform: translateY(-5px) rotate(-45deg);
 }
 
 @media screen and (max-width: 575.98px) {
