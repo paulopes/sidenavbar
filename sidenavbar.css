@@ -1,7 +1,7 @@
 .sidenavbar-button {
     position: absolute;
     z-index: 3;
-    top: 20spx;
+    top: 20px;
     right: 20px;
     cursor: pointer;
     transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
@@ -11,7 +11,7 @@
     width: 20px;
     height: 2px;
     transform: scaleX(0.15) scaleY(1.5);
-    margin-bottom: 3px;
+    margin-bottom: 4px;
     background-color: var(--dark);
     transition: transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91),
         opacity 500ms, box-shadow 250ms, background-color 500ms;
@@ -29,13 +29,13 @@
     transform: translateX(2px) scaleX(0.6);
 } */
 .sidenavbar-active .sidenavbar-button-top {
-    transform: translateY(5px) rotate(-135deg);
+    transform: translateY(6px) rotate(-135deg);
 }
 .sidenavbar-active .sidenavbar-button-mid {
     transform: scale(0);
 }
 .sidenavbar-active .sidenavbar-button-bottom {
-    transform: translateY(-5px) rotate(-45deg);
+    transform: translateY(-6px) rotate(-45deg);
 }
 
 @media screen and (max-width: 575.98px) {
