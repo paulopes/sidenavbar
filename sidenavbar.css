@@ -55,15 +55,17 @@
 @media screen and (max-width: 575.98px) {
     #sidenavbarbehind {
         position: fixed;
-        background: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0);
+        transition: background-color 200ms linear;
         top: 57px;
         left: 0;
         right: 0;
         bottom: 0;
-        display: none;
+        z-index: -1;
+        display: block;
     }
     .sidenavbar-active #sidenavbarbehind {
-        display: block;
+        background-color: rgba(0, 0, 0, 0.1);
         z-index: 91;
     }
     .navbar-collapse {
