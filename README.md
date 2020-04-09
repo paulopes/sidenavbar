@@ -6,13 +6,21 @@ This implementation shows the navbar items (when the navbar is collapsed) inside
 
 It requires that the navbar's nav element has a "sidenavbar" class instead of a "navbar-expand-xx" class.
 
-Like bootstrap's collapsing method, it is also necessary that each navbar-item be inside of a div that has the "navbar-collapse" class.
+Like bootstrap's collapsing method, it is also necessary that each navbar-item be inside of a div that has the "navbar-collapse" class. Hoerver, unlike bootstrap's collapsing method, you don't add a navbar-toggle button, it is automatically added for you.
+
+The sidenavbar's width is 250px by default, but you can override it using the --sidenabar-width CSS variable. For example, if you'd like the width to be 195px you'd put the following rule in your CSS:
+
+```css
+:root {
+    --sidenabar-width: 195px;
+}
+```
 
 ---
 
 Author: Paulo Lopes
 
-Version: 0.0.1
+Version: 0.0.2
 
 License: Apache version 2.0
 
