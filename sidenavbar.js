@@ -1,42 +1,46 @@
-document.addEventListener('DOMContentLoaded', function() {
-  var sidenavbarbehind = document.createElement('div');
-  sidenavbarbehind.setAttribute('id', 'sidenavbarbehind');
-  document.body.appendChild(sidenavbarbehind);
-
-  sidenavbarbehind.addEventListener('click', function(event) {
+(function () {
+  function clickBehindHandler() {
     if (document.body.classList.contains('sidenavbar-active')) {
-      document.body.classList.remove('sidenavbar-active')
+      document.body.classList.remove('sidenavbar-active');
     }
-  });
+  }
 
-  window.addEventListener(
-    'DOMContentLoaded',
-    function() {
-      document.body.querySelectorAll('.navbar').forEach(function(el) {
-        var sidenavbarbutton = document.createElement('div')
-        sidenavbarbutton.classList.add('sidenavbar-button')
+  function clickButtonHandler() {
+    if (document.body.classList.contains('sidenavbar-active')) {
+      document.body.classList.remove('sidenavbar-active');
+    } else {
+      document.body.classList.add('sidenavbar-active');
+    }
+  }
 
-        var sidenavbarbuttontop = document.createElement('div')
-        sidenavbarbuttontop.classList.add('sidenavbar-button-top')
-        sidenavbarbutton.appendChild(sidenavbarbuttontop)
-        var sidenavbarbuttonmid = document.createElement('div')
-        sidenavbarbuttonmid.classList.add('sidenavbar-button-mid')
-        sidenavbarbutton.appendChild(sidenavbarbuttonmid)
-        var sidenavbarbuttonbottom = document.createElement('div')
-        sidenavbarbuttonbottom.classList.add('sidenavbar-button-bottom')
-        sidenavbarbutton.appendChild(sidenavbarbuttonbottom)
+  function windowHandler() {
+    document.body.querySelectorAll('.navbar').forEach(function (el) {
+      var sidenavbarbutton = document.createElement('div');
+      sidenavbarbutton.classList.add('sidenavbar-button');
 
-        el.appendChild(sidenavbarbutton)
+      var sidenavbarbuttontop = document.createElement('div');
+      sidenavbarbuttontop.classList.add('sidenavbar-button-top');
+      sidenavbarbutton.appendChild(sidenavbarbuttontop);
+      var sidenavbarbuttonmid = document.createElement('div');
+      sidenavbarbuttonmid.classList.add('sidenavbar-button-mid');
+      sidenavbarbutton.appendChild(sidenavbarbuttonmid);
+      var sidenavbarbuttonbottom = document.createElement('div');
+      sidenavbarbuttonbottom.classList.add('sidenavbar-button-bottom');
+      sidenavbarbutton.appendChild(sidenavbarbuttonbottom);
 
-        sidenavbarbutton.addEventListener('click', function(event) {
-          if (document.body.classList.contains('sidenavbar-active')) {
-            document.body.classList.remove('sidenavbar-active')
-          } else {
-            document.body.classList.add('sidenavbar-active')
-          }
-        })
-      })
-    },
-    false
-  );
-})
+      el.appendChild(sidenavbarbutton);
+      sidenavbarbutton.addEventListener('click', clickButtonHandler);
+    });
+  }
+
+  function documentHandler() {
+    var sidenavbarbehind = document.createElement('div');
+    sidenavbarbehind.setAttribute('id', 'sidenavbarbehind');
+    document.body.appendChild(sidenavbarbehind);
+    sidenavbarbehind.addEventListener('click', clickBehindHandler);
+
+    window.addEventListener('DOMContentLoaded', windowHandler, false);
+  }
+
+  document.addEventListener('DOMContentLoaded', documentHandler);
+})();
