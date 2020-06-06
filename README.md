@@ -12,7 +12,7 @@ The sidenavbar's width is 250px by default, but you can override it using the --
 
 ```css
 :root {
-    --sidenavbar-width: 195px;
+  --sidenavbar-width: 195px;
 }
 ```
 
@@ -20,7 +20,7 @@ The sidenavbar's width is 250px by default, but you can override it using the --
 
 Author: Paulo Lopes
 
-Version: 0.0.2
+Version: 0.0.3
 
 License: Apache version 2.0
 
