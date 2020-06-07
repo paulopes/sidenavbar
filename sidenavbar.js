@@ -1,3 +1,12 @@
+/*!
+ * sidenavbar 0.0.3
+ *
+ * @link https://github.com/paulopes/sidenavbar/blob/master/README.md
+ * @source https://github.com/paulopes/sidenavbar
+ * @copyright (c) 2020 Paulo Lopes
+ * @license Apache License 2.0
+ * https://github.com/paulopes/sidenavbar/blob/master/LICENSE
+ */
 (function () {
   function clickBehindHandler() {
     if (document.body.classList.contains('sidenavbar-active')) {

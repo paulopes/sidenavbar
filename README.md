@@ -22,6 +22,6 @@ Author: Paulo Lopes
 
 Version: 0.0.3
 
-License: Apache version 2.0
+License: Apache License 2.0
 
 Inspired by: https://codepen.io/Smakosh/pen/OQMNNd
