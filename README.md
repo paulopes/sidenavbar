@@ -20,7 +20,7 @@ The sidenavbar's width is 250px by default, but you can override it using the --
 
 Author: Paulo Lopes
 
-Version: 0.0.3
+Version: 0.0.4
 
 License: Apache License 2.0
 

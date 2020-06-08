@@ -1,5 +1,5 @@
 /*!
- * sidenavbar 0.0.3
+ * sidenavbar 0.0.4
  *
  * @link https://github.com/paulopes/sidenavbar/blob/master/README.md
  * @source https://github.com/paulopes/sidenavbar

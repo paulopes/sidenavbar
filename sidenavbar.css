@@ -1,5 +1,5 @@
 /*!
- * sidenavbar 0.0.3
+ * sidenavbar 0.0.4
  *
  * @link https://github.com/paulopes/sidenavbar/blob/master/README.md
  * @source https://github.com/paulopes/sidenavbar
@@ -10,8 +10,9 @@
 .sidenavbar-button {
   position: absolute;
   z-index: 93;
-  top: 20px;
-  right: 15px;
+  top: 12px;
+  padding: 8px 16px;
+  right: 8px;
   width: 20px;
   cursor: pointer;
   transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
@@ -24,7 +25,6 @@
   }
 }
 .sidenavbar-button div {
-  margin-left: 8px;
   width: 2px;
   height: 2px;
   transform: scaleX(1.5) scaleY(1.5);
@@ -39,15 +39,6 @@
   border: 1px solid var(--light);
   background-color: var(--light);
 }
-/* .sidenavbar-button-top {
-    transform: translateX(4px) scaleX(0.4);
-}
-.sidenavbar-button-mid {
-    transform: translateX(0px) scaleX(0.8);
-}
-.sidenavbar-button-bottom {
-    transform: translateX(2px) scaleX(0.6);
-} */
 .sidenavbar-active .sidenavbar-button-top {
   border-radius: 0;
   transform: translateY(6px) rotate(-135deg) scaleX(10);
