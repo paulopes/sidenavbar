@@ -80,9 +80,11 @@
     color: #343838;
     transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
   }
+  .navbar-collapse .nav,
   .navbar-collapse .navbar-nav {
     overflow-y: auto;
   }
+  .navbar-collapse .nav a.nav-link,
   .navbar-collapse .navbar-nav a.nav-link {
     padding: 16px 2px 0 2px;
   }
@@ -184,6 +186,7 @@
     opacity: 1;
     flex-direction: column;
   }
+  .sidenavbar-active .navbar-collapse .nav,
   .sidenavbar-active .navbar-collapse .navbar-nav {
     width: var(--sidenavbar-width, 250px);
     padding: 5px 20px;
